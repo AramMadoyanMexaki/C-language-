@@ -4,7 +4,7 @@
 
     "javascript": "node",
     "java": "cd $dir && javac $fileName && java $fileNameWithoutExt",
-    "c": "cd $dir && gcc -std=c99 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+    "c": "cd $dir && gcc -std=c99 $fileName -o $fileNameWithoutExt -lm && $dir$fileNameWithoutExt",
     "zig": "zig run",
     "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
     "objective-c": "cd $dir && gcc -framework Cocoa $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
