@@ -20,7 +20,7 @@ int main() {
     };
 
     for(int i = 0; i < sizeof(strings) / sizeof(strings[i]); i++) {
-        printf("%p\n", strings[i]); // ամեն բառի հասցեն հիշողության մեջ
+        printf("mem address %p\n", strings[i]); // ամեն բառի հասցեն հիշողության մեջ
         if(strncmp(strings[i], "Sh", 2) == 0) { // համեմատում է ամեն տեքստը տրված պայմանների հետ ("Sh" - այն բառերը որոնք սկսում են սրանով, 2 - ստուգիր առաջին 2 տարրերը)
             puts(strings[i]);
         }
